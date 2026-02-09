@@ -25,16 +25,16 @@ project/
 ## 遊戲說明
 
 ### 遊戲 G - 接樹莓遊戲
-- **目標**: 控制角色接住掉落的樹莓，避開毒樹莓
+- **目標**: 控制角色接住掉落的樹莓，避開炸彈
 - **操作**: 方向鍵移動
 - **規則**: 
   - 接到普通樹莓加分
-  - 接到毒樹莓（黑色）扣血
+  - 接到炸彈扣血
   - 達到目標分數即可獲勝
 
 ### 遊戲 A - 傳統貪食蛇
 - **目標**: 吃樹莓增長身體，達到目標分數
-- **操作**: 方向鍵 或 WASD 控制方向
+- **操作**: 方向鍵↑、↓、←、→控制方向
 - **規則**:
   - 吃到樹莓身體變長，分數增加
   - 撞牆或撞到自己失敗
@@ -160,6 +160,12 @@ class GameX(GameBase):
 def run_game_x(screen, assets, **kwargs):
     game = GameX(screen, assets, **kwargs)
     return game.run()
+```
+### 製作成exe
+
+```bash
+pyi-makespec -F -w main.py
+pyinstaller main.spec
 ```
 
 ### 新增資源
