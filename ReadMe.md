@@ -192,6 +192,9 @@ pyinstaller main.spec
 歡迎提交問題報告和改進建議！
 
 ## 致謝、共同編程
+
 PC(我)🥇
+
 Claude🥈
+
 NAN🥉
